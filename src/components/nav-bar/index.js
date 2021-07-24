@@ -1,38 +1,48 @@
 import React  from "react";
 import "./index.css";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from '../../pages';
-import About from '../../pages/about';
-import Contact from '../../pages/contact';
-import News from '../../pages/news';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 
 export default function NavBar() {
 
   
   return (
-    <div className="layout-column justify-content-center align-items-center">
-      <div className="layout-row justify-content-around align-items-center mt-20 links"
-           data-testid="navigation-tabs">
-          <a to='/'>Home</a>
-          <a>News</a>
-          <a>Contact</a>
-          <a to='/about'>About</a>
-      </div>
+    <Router>
+      <div className="layout-column justify-content-center align-items-center">
+        <div className="layout-row justify-content-around align-items-center mt-20 links"
+            data-testid="navigation-tabs">
+            <Link to = "/">Home</Link>
+            <Link to = "/news">News</Link>
+            <Link to = "/contact">Contact</Link>
+            <Link to = "/about">About</Link>
+        </div>
 
-      <div className="card w-20 ma-0">
-        <section className="card-text" data-testid="tab-content">
-          <span id='output'>
-          <Router>
-            <Switch>
-              <Route path='/' component={props => <Home {...props} />} />
-              <Route path='/about' component={props => <About {...props} />} />
-              <Route path='/contact' component={props => <Contact {...props} />} />
-              <Route path='/news' component={props => <News {...props} />} />
-            </Switch>
-          </Router>
-          </span>
-        </section>
+        <div className="card w-20 ma-0">
+          <section className="card-text" data-testid="tab-content">
+            <span>
+              <Switch>
+                <Route path="/" component = { Home } />
+                <Route path="/about" component = { About } />
+                <Route path="/contact" component = { Contact } />
+                <Route path="/news" component = { News } />
+              </Switch>
+            </span>
+          </section>
+        </div>
       </div>
-    </div>
+    </Router>
   );
+}
+
+function Home(){
+  return <div>HOME PAGE</div>
+}
+function About(){
+  return <div>ABOUT PAGE</div>
+}
+function Contact(){
+  return <div>CONTACT PAGE</div>
+}
+function News(){
+  return <div>NEWS PAGE</div>
 }

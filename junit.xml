@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="4" time="2.993">
+  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2021-07-24T14:16:49" time="2.119" tests="6">
+    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.037">
+    </testcase>
+    <testcase classname=" News tab works" name=" News tab works" time="0.024">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  NEWS PAGE
+Received:
+  HOME PAGE
+    at Object.&lt;anonymous&gt; (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/src/App.test.js:30:22)
+    at Object.asyncJestTest (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" Contact tab works" name=" Contact tab works" time="0.008">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  CONTACT PAGE
+Received:
+  HOME PAGE
+    at Object.&lt;anonymous&gt; (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/src/App.test.js:35:22)
+    at Object.asyncJestTest (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" About tab works" name=" About tab works" time="0.007">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  ABOUT PAGE
+Received:
+  HOME PAGE
+    at Object.&lt;anonymous&gt; (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/src/App.test.js:40:22)
+    at Object.asyncJestTest (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" Home tab works" name=" Home tab works" time="0.006">
+    </testcase>
+    <testcase classname=" Navigation works" name=" Navigation works" time="0.006">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  ABOUT PAGE
+Received:
+  HOME PAGE
+    at Object.&lt;anonymous&gt; (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/src/App.test.js:50:22)
+    at Object.asyncJestTest (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/sgtmcclain/AppAcademy_Test/ReactTest/c6233cd5-e40e-4d0a-a8a6-5c09d5bc5e13/node_modules/jest-jasmine2/build/queueRunner.js:73:41</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
