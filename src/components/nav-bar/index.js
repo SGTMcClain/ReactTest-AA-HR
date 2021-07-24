@@ -1,7 +1,10 @@
 import React  from "react";
 import "./index.css";
-import App from '../../App'
-import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from '../../pages';
+import About from '../../pages/about';
+import Contact from '../../pages/contact';
+import News from '../../pages/news';
 
 export default function NavBar() {
 
@@ -19,7 +22,14 @@ export default function NavBar() {
       <div className="card w-20 ma-0">
         <section className="card-text" data-testid="tab-content">
           <span id='output'>
-            **ROUTES GO HERE**
+          <Router>
+            <Switch>
+              <Route path='/' component={props => <Home {...props} />} />
+              <Route path='/about' component={props => <About {...props} />} />
+              <Route path='/contact' component={props => <Contact {...props} />} />
+              <Route path='/news' component={props => <News {...props} />} />
+            </Switch>
+          </Router>
           </span>
         </section>
       </div>
